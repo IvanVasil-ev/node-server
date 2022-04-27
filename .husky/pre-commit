@@ -2,21 +2,21 @@
 . "$(dirname "$0")/_/husky.sh"
 
 # Check Prettier standards
-npm run check-format || (
+yarn check-format || (
   echo '❌ Prettier Check Failed.'
   false;
 )
 echo '✅ Prettier Check success.'
 
 # Check ESLint Standards
-npm run check-lint || (
+yarn check-lint || (
   echo '❌ ESLint Check Failed.'
   false;
 )
 echo '✅ ESLint Check success.'
 
 # Check tsconfig standards
-npm run check-types || (
+yarn check-types || (
   echo '❌ Type check Failed.'
   false;
 )
@@ -24,7 +24,7 @@ echo '✅ Type check success.'
 
 echo '*️⃣ Build in process...'
 
-npm run build || (
+yarn build || (
   echo '❌ Next build Failed.'
   false;
 )
