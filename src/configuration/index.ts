@@ -41,6 +41,7 @@ export const RESPONSE_STATUSES = {
   ok: 200,
 } as const;
 
+export const MODEL_ROLES = ['admin', 'user'] as const;
 export const ROLES = {
   admin: 'admin',
   user: 'user',
