@@ -13,7 +13,7 @@ server.use(bodyParser.json());
 server.use(cors());
 
 server.get('/', (_, res) => {
-  res.status(200).sendFile('src/public/index.html', { root: process.cwd() });
+  res.status(200).sendFile('public/index.html', { root: process.cwd() });
 });
 
 server.use(apiKey);
