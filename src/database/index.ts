@@ -21,6 +21,7 @@ class Database {
         dialect,
         port,
         host,
+        ssl: true,
       });
     }
 
